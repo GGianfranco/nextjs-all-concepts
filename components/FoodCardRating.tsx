@@ -5,7 +5,7 @@ import FoodCardRatingProps from "@/types/FoodCardRatingProps";
 const FoodCardRating: NextPage<FoodCardRatingProps> = (props) => {
   const { rating } = props;
 
-  const filled = (key: number) => (
+  const filled = (key: string) => (
     <li key={key}>
       <svg
         aria-hidden="true"
@@ -25,7 +25,7 @@ const FoodCardRating: NextPage<FoodCardRatingProps> = (props) => {
     </li>
   );
 
-  const unfilled = (key: number) => (
+  const unfilled = (key: string) => (
     <li key={key}>
       <svg
         aria-hidden="true"
